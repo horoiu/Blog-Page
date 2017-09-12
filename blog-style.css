@@ -1,0 +1,398 @@
+/* Importing fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Quantico');
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Fjalla One');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+
+
+
+/*  BEGIN  */
+
+html {
+	height: 100%;
+}
+
+body {
+    background-image: url("http://img10.deviantart.net/5695/i/2006/088/a/a/old_iv_by_cluj.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0 0 10px 0;
+}
+
+
+
+  /* HEADER - top navigation bar */
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    background-color: #efecec;
+    z-index: 10;
+}
+
+.top-nav {
+    position: relative;
+	margin: 0;
+    float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    width: 25%;
+    height: 70px;
+    background-color: #efecec;
+}
+
+
+  /* header logo */
+.top-nav a {
+	height: 50px;
+	width: 70px;
+	position: relative;
+	right: 34%;
+	transition: all 200ms;
+}
+
+.top-nav a:hover {
+	position: relative;
+	transform: scale(1.4);
+	transition: all 200ms;
+}
+
+.logo {
+    height: 50px;
+	width: 70px;
+}
+
+
+  /* header drop-down menu */
+.header-nav {
+	position: relative;
+	display: inline-block;
+}
+
+.drop-btn {
+	cursor: pointer;
+    padding: 3px 10px;
+}
+
+.drop-down {
+	position: relative;
+	display: inline-block;
+}
+
+.drop-content {
+    display: none;
+    position: absolute;
+    top: 84%;
+    background-color: #e0d9d9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    font-size: 0.8em;
+}
+
+.drop-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 15px;
+}
+
+.drop-content a:hover {
+    background-color: #c3c3c3;
+}
+
+.drop-menu:hover .drop-content {
+    display: block;
+}
+
+.drop-menu:hover .drop-btn {
+    background-color: #e0d9d9;
+    border-radius: 15px;
+}
+
+.header-nav {
+    position: relative;
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 70px;
+}
+
+nav.header-nav a, .drop-btn {
+    text-decoration: none;
+    padding-top: 6px;
+    font-family: fantasy, arial;
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #404040;
+}
+
+
+/* search bar */
+
+#search {
+    font-size: 14px;
+    height: 19px;
+    border-radius: 50px 3px 3px 50px;
+}
+
+#search:hover {
+    background-color: #ddddf4;
+}
+
+#submit {
+    font-size: 13px;
+    height: 23px;
+    border-radius: 3px 50px 50px 3px;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-image: linear-gradient(#6cbb6b, #95d788);
+}
+
+
+
+/* article & sections - left container */
+
+.hidden {
+    display: none;
+}
+
+.container {
+	position: relative;
+    background-color: rgba(255, 255, 255, 0.95);
+	width: 55%;
+	height: auto;
+    clear: both;
+	margin: 12% 0 8% 8%;
+    padding-top: 1px;
+}
+
+.content {
+	width: 94%;
+	position: relative;
+	left: 3%;
+	margin-top: 2%;
+    border-top: 3px solid rgba(174, 217, 248, 0.28);
+    border-bottom: 3px solid rgba(174, 217, 248, 0.28);
+    padding-top: 5px;
+	background-color: white;
+}
+
+#my-photo {
+    height: 225px;
+    width: 225px;
+    border-radius: 50%;
+    position: relative;
+    float: right;
+    margin: 0 -3% 2% 5%;
+}
+
+#my-photo:active {
+    position: absolute;
+    z-index: 2;
+    height: 425px;
+    width: 425px;
+}
+
+.content h1, .container h1 {
+    text-shadow: 4px 3px 8px #aaa;
+    font-style: italic;
+    font-size: 40px;
+    color: crimson;
+    font-family: Quantico;
+    letter-spacing: 3px;
+    padding-left: 20px;
+}
+
+.content h2 {
+    text-shadow: 2px 2px 4px #aaa;
+    font-size: 34px;
+    color: #6f6f6f;
+    font-family: Fjalla One;
+    letter-spacing: 3px;
+    padding-left: 18px;
+}
+
+h3 {
+    font-family: Oswald;
+    font-style: italic;
+    font-size: 30px;
+    color: #849ab9;
+    padding-left: 23px;
+    text-shadow: 2px 2px 4px #aaa;
+    font-weight: 800;
+}
+
+#project-link {
+    transition: 0.5s all;
+}
+
+#project-link:hover {
+    cursor: pointer;
+    color: #2eaaf2;
+    transform: scale(1.1);
+    transition: 0.5s all;
+    padding-left: 65px;
+}
+
+.content p, .content a, .content li {
+    font-size: 25px;
+    font-weight: 300;
+    font-family: Ubuntu;
+    letter-spacing: 1.6px;
+    text-align: justify;
+    list-style-type: circle;
+}
+
+.small li {
+    font-size: 20px;
+    list-style-type: decimal;
+}
+
+.content p {
+    text-indent: 40px;
+}
+
+.content a {
+    text-decoration: none;
+    color: #76b43a;
+    transition: all 200ms;
+}
+
+.content a:hover {
+    text-decoration: none;
+    font-size: 26px;
+    color: #2eaaf2;
+    transition: all 200ms;
+}
+
+#contact {
+    height: 80px;
+    width: 80%;
+    margin: 0 0 5% 10%;
+}
+
+#contact li {
+    list-style-type: none;
+    position: relative;
+    float: left;
+    margin-top: 15px;
+    padding: 1px 40px;
+}
+
+.media-icons {
+    width: 50px;
+    height: 50px;
+	transition: all 200ms;
+}
+
+.media-icons:hover {
+	opacity: 0.8;
+    transform: scale(1.4);
+	transition: all 200ms;
+}
+
+
+/* //////////////////////////////////// */
+
+/*
+.wrapper {
+    margin-top: -70px;
+	padding-top: 70px;
+}
+*/
+
+
+/*selected anchor position*/
+
+.content:target {
+    padding-top: 70px;
+}
+
+/* //////////////////////////////////// */
+
+/* aside - blog roll */
+
+aside.blog-links {
+    position: fixed;
+	left: 72%;
+    width: 25%;
+	height: auto;
+	top: 10.5%;
+	font-family: Arvo;
+    letter-spacing: 1.2px;
+    background-color: rgba(235, 235, 235, 0.85);
+	color: darkgreen;
+}
+
+aside.blog-links li {
+	list-style-type: none;
+}
+
+aside.blog-links h2 {
+	margin: 10px 0;
+	height: 20px;
+    color: darkgreen;
+	font-weight: bold;
+	font-size: 30px;
+    text-align: center;
+	padding-bottom: 15px;
+}
+
+aside.blog-links a {
+    line-height: 28px;
+    font-size: 16px;
+    text-decoration: none;
+    color: darkgreen;
+	transition: all 200ms;
+}
+
+aside.blog-links a:hover {
+    font-size: 17.5px;
+    transition: all 200ms;
+    color: #2eaaf2;
+}
+
+
+
+/* footer bar */
+
+.main-footer {
+	position: fixed;
+    bottom: 0;
+	height: 60px;
+    width: 100%;
+    background-color: black;
+}
+
+.copyright {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 13px;
+    line-height: 4px;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: #efffd5;
+}
+
+.copyright  a:hover {
+    font-size: 14px;
+    color: #2eaaf2;
+    transition-duration: .5s;
+}
